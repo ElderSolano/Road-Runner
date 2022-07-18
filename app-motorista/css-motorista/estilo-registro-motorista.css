@@ -1,0 +1,83 @@
+@import url(../fonts/aileron-font/Aileron-Italic.otf);
+@font-face {
+    font-family: 'Aileron';
+    src: url(../fonts/aileron-font/Aileron-Italic.otf);
+}
+
+body{
+    font-family: Aileron;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    margin:0;
+    background-color: #F0F1F5;
+}
+hr {
+    height: 0.2px;
+    background-color: black;
+  }
+
+  .container {
+    background-color: #F25116;
+    padding: 20px 40px;
+    border-radius: 20px;
+    color: #F0F1F5;
+}
+
+.btn {
+    color:#fff;
+    cursor: pointer;
+    display: inline-block;
+    width: 60%;
+    border:3px solid white;
+    background: #F25116;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 25px;
+    border-radius: 10px;
+}
+ 
+.form-control{
+    border: transparent;
+    background-color:transparent;
+    position:relative;
+    margin:20px 0 40px;
+    width:300px;
+}
+.form-control input{
+    background-color:transparent;
+    border:0;
+    border-bottom:3px #fff solid;
+    display:block;
+    width:100%;
+    padding:15px 0;
+    font-size:18px;
+    color:#fff;
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline:0;
+    border-bottom-color:#fff;
+}
+.form-control label{
+    position:absolute;
+    top:15px;
+    left:0;
+    pointer-events:none;
+}
+.form-control label span{
+    display:inline-block;
+    font-size:18px;
+    min-width:5px;
+    transition:0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color:#fff;
+    transform:translateY(-30px);
+}
+.text {
+    margin-top: 30px;
+}
+    

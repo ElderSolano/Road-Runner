@@ -1,0 +1,125 @@
+@import url(../fonts/aileron-font/Aileron-Italic.otf);
+@font-face {
+    font-family: 'Aileron';
+    src: url(../fonts/aileron-font/Aileron-Italic.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Aileron;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+#header {
+    padding-top: 50px;
+    height: 250px;
+}
+
+#logo>.logo-rr {
+    padding-top: 10px;
+    display: block;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-header {
+    color:#000;
+    text-align: end;
+    margin: 5px 5px 0 0;
+    font-size: 18px;
+}
+
+.container {
+    background-color: #F25116;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    color:#fff;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    border:2px solid black;
+    background: rgb(90, 87, 87);
+    padding: 15px;
+    font-family: inherit;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.form-control{
+    border: transparent;
+    background-color:transparent;
+    position:relative;
+    margin:20px 0 40px;
+    width:300px;
+}
+.form-control input{
+    background-color:transparent;
+    border:0;
+    border-bottom:3px #fff solid;
+    display:block;
+    width:100%;
+    padding:15px 0;
+    font-size:18px;
+    color:#fff;
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline:0;
+    border-bottom-color:#fff;
+}
+.form-control label{
+    position:absolute;
+    top:15px;
+    left:0;
+    pointer-events:none;
+}
+.form-control label span{
+    display:inline-block;
+    font-size:18px;
+    min-width:5px;
+    transition:0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color:#fff;
+    transform:translateY(-30px);
+}

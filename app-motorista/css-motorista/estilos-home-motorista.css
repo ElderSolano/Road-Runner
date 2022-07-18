@@ -1,0 +1,35 @@
+@import url(../fonts/aileron-font/Aileron-Italic.otf);
+@font-face {
+    font-family: 'Aileron';
+    src: url(../fonts/aileron-font/Aileron-Italic.otf);
+}
+
+
+body{
+    font-family: Aileron;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    margin:0;
+    background-color: #F0F1F5;
+}
+hr {
+    height: 0.2px;
+    background-color: black;
+  }
+  .imagen{
+    display: block;
+    margin:0;
+    width: auto;
+    height: auto;
+}
+.imagen:hover{
+    cursor: pointer;
+    background-color: #0000;
+}
+.disenio{
+    background-color: #F25116;
+    margin-top: 10px;
+    border-radius: 15px;
+}
